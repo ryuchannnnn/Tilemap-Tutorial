@@ -47,8 +47,8 @@ class Overworld extends Phaser.Scene
 
         terrainLayer.setCollisionByProperty({collides: true})
         treeLayer.setCollisionByProperty({collides: true})
-        this.physics.add.collider(this.slime, terrainLayer)
-        this.physics.add.collider(this.slime, treeLayer)
+        this.physics.add.collider(this.slime, terrainLayer);
+        this.physics.add.collider(this.slime, treeLayer);
 
         // cameras 
         this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
